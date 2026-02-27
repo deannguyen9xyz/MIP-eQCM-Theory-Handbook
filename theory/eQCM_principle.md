@@ -39,11 +39,7 @@ The ratio of peak energy stored to energy lost per cycle is referred to as the q
 
 where fc is the center frequency and fFWHM is the full width at half max. This full width at half max is also called the bandwidth. 
 For quartz crystals in air, Q can exceed 100,000 while in solution Q decreases to ~3000. This is because the crystal has been damped by the solution. 
-This damping increases the amount of energy lost per cycle, decreasing Q as shown in Figure 2 below.
-
-<img width="268" height="198" alt="image" src="https://github.com/user-attachments/assets/4999fc83-ed7f-4020-a891-8fb14cb8342b" />
-
-Figure 2. Comparison of High Q (solid line) and Low Q (dashed line).
+This damping increases the amount of energy lost per cycle.
 
 ## 3.QCM working principle
 The core of QCM technology is the sensor, where a thin disk of the piezoelectric material is sandwiched between two electrodes.
@@ -56,6 +52,56 @@ the resonance frequency depends on the sensor design and is typically 5-10MHz, b
 **Figure 2**. Schematic illustration of a (A) QCM sensor made of a thin disk of a piezoelectric material sandwiched between two electrodes. 
 The disk material is typically quartz, and the electrodes are typically made of gold, but other materials can be used. 
 In (B), an alternating voltage is applied over the sensor, inducing a mechanical oscillation of the sensor
+</div>
+
+The QCM measurement is achieved by monitoring the change in resonance frequency, Δf, when mass is added to, or removed from, the sensor surface. When mass is added, the resonance frequency decreases, Figure 3, and vice versa.
+
+<div align="center">
+<img width="3251" height="1329" alt="image" src="https://github.com/user-attachments/assets/70007173-3c08-433b-9cfb-34e24da57506" />
+
+Figure 3. QCM technology collects time-resolved information on frequency changes of the QCM sensor and can detect mass uptake at the sensor surface. The schematic illustration shows (I) a bare sensor surface and a stable baseline of Δf. In step (II), molecules adsorb to the sensor surface which results in a frequency decrease. In (III), the surface uptake has been completed and the frequency response has stabilized. The frequency shift between I and III can be used to quantify the mass uptake at the sensor surface.
+</div>
+
+By following the changes in Δf, molecule – surface interaction can be detected and mass uptake and release from the surface can be quantified, Figure 4.
+
+<div align="center">
+<img width="2367" height="999" alt="image" src="https://github.com/user-attachments/assets/636bb929-ccb8-4325-b11d-1e98c90cd982" />
+
+Figure 3. Schematic illustration of molecules (left) adsorbing to and (right) desorbing from the QCM sensor surface. The bottom panels illustrate the resulting changes in quantified mass, i.e., mass uptake as molecules adsorb and mass loss as they leave the surface.
+</div>
+
+## 4. Equivalent Circuit Model
+
+The quartz crystal oscillations can be modeled in a similar fashion to a mechanical
+spring-mass-damper simple harmonic oscillator or an electrical RLC circuit. In the case
+of an RLC circuit (Figure 4a), R represents the energy dissipated during the oscillation,
+C represents the energy stored and L represents the inertial component related to the
+displaced mass. Therefore, the impedance spectrum of the quartz crystal can be used
+to extract the values of R, L and C. An example Impedance spectrum for a RLC circuit
+is shown in Figure 4b. Here, a sharp spike is observed at the resonate frequency (f0)
+and therefore a change in mass results in a change in frequency .
+
+<div align="center">
+<img width="1066" height="311" alt="image" src="https://github.com/user-attachments/assets/343a37c6-0821-4c4d-ad69-90e85ab62702" />
+
+Figure 4. (a) Scheme of an RLC Circuit for modeling the Impedance response of a quartz
+crystal (b) Impedance spectrum for a series RCL circuit
+</div>
+
+Making electrical contact to a quartz crystal is most easily done be addition of an electrode to each face of the crystal. These electrodes introduce an additional capacitance (C0) in parallel with the series RLC as shown in Figure 5. This circuit is commonly referred to as the Butterworth van Dyke (BvD) model.
+
+<div align="center">
+<img width="294" height="86" alt="image" src="https://github.com/user-attachments/assets/c8fab490-7fa6-4fb4-8de6-72a42dd99e96" />
+
+Figure 5. Butterworth van Dyke Equivalent Circuit Model.
+</div>
+
+The circuit shown above now has two resonant frequencies, fs and fp, which stand for the series resonant frequency (as in the original RLC circuit) and the parallel resonant frequency, respectively. The impedance spectrum for the BvD model is shown below with a minimum at fs and a maximum at fp.
+
+<div align="center">
+<img width="436" height="260" alt="image" src="https://github.com/user-attachments/assets/5e2b8072-b2ef-420f-81ab-60edd6f0822d" />
+
+Figure 6. Impedance Spectrum for the Butterworth van Dyke Equivalent Circuit Model.
 </div>
 
 ## References
