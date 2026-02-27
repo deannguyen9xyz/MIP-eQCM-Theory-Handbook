@@ -88,21 +88,33 @@ Figure 4. (a) Scheme of an RLC Circuit for modeling the Impedance response of a 
 crystal (b) Impedance spectrum for a series RCL circuit
 </div>
 
-Making electrical contact to a quartz crystal is most easily done be addition of an electrode to each face of the crystal. These electrodes introduce an additional capacitance (C0) in parallel with the series RLC as shown in Figure 5. This circuit is commonly referred to as the Butterworth van Dyke (BvD) model.
+In practice, the act of adding electrical contacts to the crystal (represented as
+gold contacts in Figure 1 and 2) adds an additional capacitance. This capacitance is added
+into the RCL model and is denoted the Butterworth-Van Dyke (BVD) Model (Figure 5a).
+This circuit model results in two resonant frequencies fs and fp ,(Figure 5b) which
+represent the series resonant frequency (same as the original RLC circuit in Figure 4a)
+and parallel resonant frequency. In the example of the Stanford Research Systems
+(SRS) QCM, the parallel capacitance is manually canceled out on the front of the
+instrument and the series resonant frequency is measured.
 
 <div align="center">
-<img width="294" height="86" alt="image" src="https://github.com/user-attachments/assets/c8fab490-7fa6-4fb4-8de6-72a42dd99e96" />
+<img width="1055" height="323" alt="image" src="https://github.com/user-attachments/assets/dbb0f041-f05d-49b9-b70f-b26b636e6176" />
 
-Figure 5. Butterworth van Dyke Equivalent Circuit Model.
+Figure 5. (a) Equivalent circuit for the Butterworth-Van Dyke Model (b) Impedance spectrum
+for the BVD model
 </div>
 
-The circuit shown above now has two resonant frequencies, fs and fp, which stand for the series resonant frequency (as in the original RLC circuit) and the parallel resonant frequency, respectively. The impedance spectrum for the BvD model is shown below with a minimum at fs and a maximum at fp.
+As previously mentioned, the resonant frequency is dependent on the inductor
+element, which itself is a function of the mass displacement, therefore, the mass
+change of the quartz crystal can be correlated with a change in the resonant frequency.
+This dependance is represented as the Sauerbry equation (Equation 1) and can be
+further simplified to Equation 2 where Cf is the calibration constant. This constant is
+usually 56.6 Hz cm2 μg-1 for a 5 MHz At-cut quartz crystal in air, however it is
+recommended to calibrate each crystal individually. Additionally this analysis assumes
+a thin rigid film and the decrease in frequency is small in comparison to the resonance
+frequency (5 MHz)
 
-<div align="center">
-<img width="436" height="260" alt="image" src="https://github.com/user-attachments/assets/5e2b8072-b2ef-420f-81ab-60edd6f0822d" />
-
-Figure 6. Impedance Spectrum for the Butterworth van Dyke Equivalent Circuit Model.
-</div>
+<img width="1046" height="284" alt="image" src="https://github.com/user-attachments/assets/64fdc9b1-0dd8-426a-b996-a1d9b6345ab4" />
 
 ## References
 
