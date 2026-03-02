@@ -131,6 +131,30 @@ Hz·μg-1·cm2).
 Figure 6. Schematic of QCM operating principle when combined with MIP for antibiotic detection.
 </div>
 
+QCM sensor has been used for measurements in vacuum and gas. Similarly,
+because the thickness-shear mode is predominant in QCM, its operation in liquid is
+made possible, in which case the frequency shift is a function of the viscosity and
+density of the liquid. Furthermore, the possibility of combining the QCM technique with electrochemistry to obtain an electrochemical QCM system (EQCM)facilitates a simultaneous evaluation of mass and electrochemical data in one
+experiment.
+
+However, QCM measurements are mostly carried out at room temperature with
+few reports to indicate their potential utilization for high and very low temperature
+environment. This is because at low temperature, quartz displays excellent
+properties, such as high mechanical quality factor (i.e., high sensing precision), high
+electrical resistivity and low temperature coefficient which disappear at very high
+or low temperature. Due to the distinctly sharp nature of the resonance frequency;
+hence, a high precision in the sample analysis, detection and/or resolution of trace
+amounts of deposited material per unit area of the surface is made possible. Thus,
+QCM in combination with a flow injection analysis (QCM-FIA) is known as a simple but
+powerful technique for the in situ monitoring of binding interaction between an
+analyte and a recognition layer on the quartz crystal. Owing to the adaptability of
+QCM in sensor analysis and the ease of interfacing with the MIP recognition layer, the
+use of QCM interfaced with MIP in the detection of numerous analytes including
+antibiotics has been broadly reported and reviewed. Moreover,
+the possibility to design and use portable, energy efficient piezoelectric sensors in
+environmental monitoring makes QCM combined with MIP attractive for antibiotics
+detection in this research.
+
 ## References
 
 https://www.biolinscientific.com/blog/what-is-qcm
