@@ -5,7 +5,7 @@ A quartz crystal microbalance (QCM), also known as quartz microbalance (QMB) and
 measures mass variation per unit area by monitoring the change in resonance frequency of a quartz crystal resonator.
 
 ## 2. Quartz and Piezoelectric Effect
-Quartz is one member of a family of crystals that exhibit the piezoelectric effect. Quartz is by far the most widely utilized material for 
+Quartz crystal, discovered by Jacques and Pierre Curie, is one member of a family of crystals that exhibit the piezoelectric effect. Quartz is by far the most widely utilized material for 
 the development of instruments containing oscillators partly due to historical reasons (the first crystals were harvested naturally) and partly due to its commercial availability (synthetically grown nowadays).
 
 Piezoelectricity refers to the electric charge 
@@ -115,6 +115,21 @@ a thin rigid film and the decrease in frequency is small in comparison to the re
 frequency (5 MHz)
 
 <img width="1046" height="284" alt="image" src="https://github.com/user-attachments/assets/64fdc9b1-0dd8-426a-b996-a1d9b6345ab4" />
+
+This also can be represented as
+
+<img width="475" height="61" alt="image" src="https://github.com/user-attachments/assets/a2098a3e-d7b7-4f89-8cfc-07e38fe7d893" />
+
+where Δf is the resonant frequency change (Hz), fo, fundamental frequency of the
+crystal (Hz), Δm, mass change (g/cm2), N, frequency constant for quartz (167 kHz·cm),
+ρ, density of quartz (2.65 g/cm3), Cf, sensitivity factor (for 5 MHz quartz crystal, 56.6
+Hz·μg-1·cm2).
+
+<div align="center">
+<img width="1013" height="614" alt="image" src="https://github.com/user-attachments/assets/28013e1a-daa2-4c6e-9277-02026e15f2ec" />
+
+Figure 6. Schematic of QCM operating principle when combined with MIP for antibiotic detection.
+</div>
 
 ## References
 
